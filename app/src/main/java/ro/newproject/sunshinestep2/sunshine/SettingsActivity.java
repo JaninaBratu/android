@@ -1,5 +1,6 @@
 package ro.newproject.sunshinestep2.sunshine;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -22,13 +23,26 @@ public class SettingsActivity extends PreferenceActivity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Add 'general' preferences, defined in the XML file
+
+        /*Begin */
+        /*int currentAPI_Version= Build.VERSION.SDK_INT;
+        if(currentAPI_Version >= Build.VERSION_CODES.KITKAT){
+            // Add 'general' preferences, defined in the XML file
+            addPreferencesFromResource(R.xml.pref_general);
+            bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key)));
+        }else{
+            // Add 'general' preferences, defined in the XML file
+            addPreferencesFromResource(R.xml.pref_general);
+            bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key)));
+        }*/
+        /*End*/
+
+       // Add 'general' preferences, defined in the XML file
         addPreferencesFromResource(R.xml.pref_general);
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key)));
-
         // For all preferences, attach an OnPreferenceChangeListener so the UI summary can be
         // updated when the preference changes
-        // TODO: Add preferences
+        // TODO: Add preferencesd
     }
 
 
