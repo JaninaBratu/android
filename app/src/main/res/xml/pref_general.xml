@@ -8,7 +8,7 @@
         android:title="@string/pref_location_label"
         android:defaultValue="@string/pref_location_default"
         android:inputType = "text"
-        android:single_line = "true"
-         />
+        android:singleLine="true"
+        />
 
 </PreferenceScreen>

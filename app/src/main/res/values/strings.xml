@@ -8,11 +8,7 @@
 
     <string name="title_activity_settings">Settings</string>
 
-    <!--label for the location preferences limit up to 30 characters-->
     <string name="pref_location_label">Location</string>
-    <!--key name for storing the location 200670, no limit to characters-->
     <string name="pref_location_key" translatable="false">location</string>
-    <!-- default postal code for location preference, no limit to characters-->
-    <!--in the example the postal code is : 94043-->
     <string name="pref_location_default" translatable="false">94043</string>
 </resources>
