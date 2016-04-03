@@ -4,9 +4,9 @@
     android:layout_height = "match_parent" >
 
     <EditTextPreference
-        android:title="Location"
-        android:key = "Location"
-        android:defaultValue="94043"
+        android:key = "@string/pref_location_key"
+        android:title="@string/pref_location_label"
+        android:defaultValue="@string/pref_location_default"
         android:inputType = "text"
         android:single_line = "true"
          />
