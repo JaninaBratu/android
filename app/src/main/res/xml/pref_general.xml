@@ -10,11 +10,11 @@
         />
 
     <ListPreference
-        android:key="@string/pref_list_key"
-        android:title="@string/pref_list_label"
-        android:defaultValue="@string/pref_list_metric"
-        android:entries="@array/pref_list_entries"
-        android:entryValues="@array/pref_list_values"
+        android:key="@string/pref_units_key"
+        android:title="@string/pref_units_label"
+        android:defaultValue="@string/pref_units_metric"
+        android:entries="@array/pref_units_entries"
+        android:entryValues="@array/pref_units_values"
         />
 
 

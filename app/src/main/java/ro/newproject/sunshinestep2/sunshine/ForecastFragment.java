@@ -130,7 +130,7 @@ public class ForecastFragment extends Fragment {
         /**
          * Prepare the weather high/lows for presentation.
          */
-      /*  private String formatHighLows(double high, double low) {
+        private String formatHighLows(double high, double low) {
 
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
             String unitType = sharedPrefs.getString(
@@ -151,7 +151,7 @@ public class ForecastFragment extends Fragment {
 
             String highLowStr = roundedHigh + "/" + roundedLow + unitTypeStr;
             return highLowStr;
-        }*/
+        }
 
         /**
          * Take the String representing the complete forecast in JSON Format and
@@ -219,9 +219,8 @@ public class ForecastFragment extends Fragment {
                 double high = temperatureObject.getDouble(OWM_MAX);
                 double low = temperatureObject.getDouble(OWM_MIN);
 
-                /* highAndLow = formatHighLows(high, low); */
-                resultStrs[i] = day + " - " + description;
-                        /* + " - "  + highAndLow; */
+                highAndLow = formatHighLows(high, low);
+                resultStrs[i] = day + " - " + description + " - "  + highAndLow;
             }
 
             return resultStrs;
